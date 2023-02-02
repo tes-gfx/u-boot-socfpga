@@ -48,7 +48,7 @@
 #define CONFIG_SYS_SPL_MALLOC_SIZE	0x00015000
 
 #define CONFIG_BOOTCOMMAND \
-	"ext4load mmc 0:2 0x8000 /boot/bootmmc_arria10som.img;" \
+	"ext4load mmc 0:3 0x8000 /boot/bootmmc_arria10som.img;" \
 	"source 0x8000"
 
 #if defined(CONFIG_QSPI_BOOT)
