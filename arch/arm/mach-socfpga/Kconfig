@@ -255,6 +255,10 @@ config TARGET_SOCFPGA_ARRIA10_SOCDK
 	bool "Altera SOCFPGA SoCDK (Arria 10)"
 	select TARGET_SOCFPGA_ARRIA10
 
+config TARGET_DREAMCHIP_ARRIA10SOM
+	bool "Dreamchip Arria10SoM (Arria 10)"
+	select TARGET_SOCFPGA_ARRIA10
+
 config TARGET_SOCFPGA_ARRIA5_SECU1
 	bool "ABB SECU1 (Arria V)"
 	select TARGET_SOCFPGA_ARRIA5
@@ -344,6 +348,7 @@ config SYS_BOARD
 	default "stratix10-socdk" if TARGET_SOCFPGA_STRATIX10_SOCDK
 	default "vining_fpga" if TARGET_SOCFPGA_SOFTING_VINING_FPGA
 	default "agilex5-axe5-eagle" if TARGET_SOCFPGA_AGILEX5_AXE5_EAGLE
+	default "arria10som" if TARGET_DREAMCHIP_ARRIA10SOM
 
 config SYS_VENDOR
 	default "intel" if TARGET_SOCFPGA_AGILEX7_SOCDK
@@ -367,6 +372,7 @@ config SYS_VENDOR
 	default "terasic" if TARGET_SOCFPGA_TERASIC_DE10_STANDARD
 	default "terasic" if TARGET_SOCFPGA_TERASIC_SOCKIT
 	default "arrow" if TARGET_SOCFPGA_AGILEX5_AXE5_EAGLE
+	default "dreamchip" if TARGET_DREAMCHIP_ARRIA10SOM
 
 config SYS_SOC
 	default "socfpga"
@@ -396,5 +402,6 @@ config SYS_CONFIG_NAME
 	default "socfpga_stratix10_socdk" if TARGET_SOCFPGA_STRATIX10_SOCDK
 	default "socfpga_vining_fpga" if TARGET_SOCFPGA_SOFTING_VINING_FPGA
 	default "socfpga_agilex5_axe5_eagle" if TARGET_SOCFPGA_AGILEX5_AXE5_EAGLE
+	default "dreamchip_arria10som" if TARGET_DREAMCHIP_ARRIA10SOM
 
 endif
