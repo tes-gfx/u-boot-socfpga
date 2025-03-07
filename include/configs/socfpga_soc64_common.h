@@ -247,7 +247,7 @@ unsigned int cm_get_qspi_controller_clk_hz(void);
 	"smc_fid_rd=0xC2000007\0" \
 	"smc_fid_wr=0xC2000008\0" \
 	"smc_fid_upd=0xC2000009\0 " \
-	"runlevel=5\0" \
+	"runlevel=3\0" \
 	"evalkit=dnx\0"
 #endif /*#if IS_ENABLED(CONFIG_DISTRO_DEFAULTS)*/
 
